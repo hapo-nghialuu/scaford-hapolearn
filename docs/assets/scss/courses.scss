@@ -1,0 +1,159 @@
+.heading {
+  margin-top: 100px;
+  font-size: 80px;
+  line-height: 98px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 2rem;
+  color: $text-heading;
+
+  span{
+    border-bottom: .5rem solid $text-green;
+    border-radius: 3px;
+  }
+}
+
+.courses {
+  .box-shadow{
+    position: absolute;
+    height: 100px;
+    background: $header-shadow;
+  }
+
+  .cards-container {
+    gap: 40px;
+    margin-top: 5rem;
+  }
+
+  .card-items {
+    max-height: 470px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: $box-shadow;
+
+    .card-header {
+      height: 200px;
+      position: relative;
+      border-radius: 15px 15px 0 0;
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .html-bg {
+      background: #3F6185;
+    }
+
+    .laravel-bg {
+      background: #DC594C;
+    }
+
+    .php-bg {
+      background: #556598;
+    }
+
+    .css-bg {
+      background: #24ABE2;
+    }
+
+    .rails-bg {
+      background: #E14E40;
+    }
+
+    .java-bg {
+      background: #1B75BB;
+    }
+
+    .card-body {
+      padding-bottom: 4rem;
+
+      .card-text {
+        font-size: .7rem;
+        color: $text-grey;
+        padding: 1rem .5rem;
+      }
+
+      .card-title {
+        font-size: 1.5rem;
+        color: $text-green;
+      }  
+
+      .courses-btn {
+        font-size: 1rem;
+        border: 0.3px solid #fff;
+        background: $text-green;
+        color: #fff;
+        box-shadow: inset 0px 1.5px 2px #6F8710;
+        border-radius: 22px;
+        padding: 9px 26px;
+      }
+    }
+  }
+
+  .heading-second {
+    font-size: 35px;
+    line-height: 49px;
+    font-weight: 600;
+    margin: 60px;
+    color: $text-green-dark;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: calc(1vw + 2rem);
+  }
+
+  .courses .cards-container {
+    gap: 1rem;
+  }
+
+  .courses .card-items {
+    .card-header {
+      img {
+        width: 150px;
+        height: 80px;
+      }
+    }
+
+    .card-body {
+      .card-title {
+        font-size: calc(1vw + .7rem);
+      }
+  
+      .card-text {
+        font-size: calc(1vw + .2rem);
+      }
+  
+      .courses-btn {
+        font-size: calc(1vw + .5rem);
+        padding: .5rem 1rem;
+        letter-spacing: -0.05em;
+      }
+    }
+  }
+
+  .courses .heading-second {
+    font-size: calc(.5vw + 1rem);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .courses {
+    margin-top: 20rem;
+
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card-items .card-body .courses-btn{
+      padding: .5rem 2rem;
+    }
+  }
+}

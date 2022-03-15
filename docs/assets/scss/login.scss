@@ -1,0 +1,175 @@
+.login-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+
+  &.active {
+    display: flex;
+  }
+
+  form {
+    width: 26rem;
+    background: #fff;
+    position: relative;
+  }
+  form .close-login-form {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 999px;
+    padding: .2rem .5rem;
+    background: $text-green;
+
+    &:hover {
+      background: $text-green-dark;
+      color: #111;
+    }
+  }
+
+  form .btn-form {
+    width: 100%;
+    height: 4rem;
+    font-size: 1.5rem;
+    border: .5px solid $text-green;
+    text-align: center;
+
+    a {
+      padding-top: .6rem;
+      width: 50%;
+      text-transform: uppercase;
+      border: .5px solid $text-green;
+    }
+
+    .btn-login-link {
+      background: $text-green;
+      color: #fff;
+    }
+
+    .btn-register-link {
+      background: #fff;
+      color: $text-green;
+    }
+  }
+
+  form .login-container {
+    padding: 1rem;
+
+    p {
+      font-size: 1rem;
+      color: $text-grey;
+    }
+
+    input {
+      width: 100%;
+      padding: .5rem 1.4rem;
+      border: 1px solid #E1E1E1;
+      background: #F2F2F2;
+    }
+  }
+
+  form .flex {
+    display: flex;
+    align-items: center;
+    gap: .5;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+
+    input {
+      accent-color: $text-green;
+    }
+
+    label {
+      cursor: pointer;
+      font-size: .8rem;
+      line-height: 2;
+      color: $text-grey;
+      margin-bottom: 0;
+    }
+
+    a {
+      font-size: .8rem;
+      color: $text-green;
+      margin-left: auto;
+
+      &:hover {
+        text-decoration: underline $text-green !important;
+      }
+    }
+  }
+
+  form .login-btn {
+    text-align: center;
+    margin-top: 1rem;
+
+    a {
+      font-size: 1rem;
+      color: #fff;
+      cursor: pointer;
+      padding: .5rem 4rem;
+      display: inline-block;
+      border-radius: 22px;
+      background: $text-green;
+      box-shadow: $box-shadow;
+
+      &:hover {
+        background: $text-green-dark;
+        color: #111;
+      }
+    }
+  }
+
+  form .p-span {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #DBDBDB;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    font-size: 1rem;
+    margin-top: 2rem;
+    color: $text-grey;
+    text-transform: uppercase;
+
+    span {
+      background: #fff;
+      padding: 0 10px;
+    }
+  }
+
+  form .btn-cre {
+    flex-direction: column;
+    padding: 1rem 1rem;
+    gap: 1rem;
+    text-align: center;
+
+    a {
+      width: 100%;
+      height: 3rem;
+      padding-top: .6rem;
+    }
+
+    .cre-gg {
+      background: #DC4E41;
+      color: #fff;
+    }
+
+    .cre-fb {
+      background: #3B5999;
+      color: #fff;
+    }
+
+    i {
+      font-size: 1.2rem;
+    }
+  }
+}

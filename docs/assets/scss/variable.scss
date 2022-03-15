@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+$text-green: #B2D235;
+$text-grey: #505353;
+$text-green-dark: #90AB26;
+$text-heading: #11114E;
+$bg-gray: #E5E6E7;
+$bg-detail:#F2F2F2;
+$header-shadow: linear-gradient(180deg, #FFFBFB 87.5%, #E7E9EE 100%);
+$box-shadow:0 5px 10px rgba(0, 0, 0, .1);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: 'Nunito', sans-serif;
+}
+
+html {
+  scroll-padding-top: 6rem;
+
+  &::-webkit-scrollbar {
+    width: .3rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $text-grey;
+    border-radius: 4rem;
+  }
+}

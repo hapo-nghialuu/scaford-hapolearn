@@ -1,0 +1,37 @@
+.statistic .box-down {
+  padding: .5rem 2.5rem;
+}
+
+.statistic{
+  .box-title {
+    font-size: 3.25rem;
+    line-height: 74px;
+    color: $text-grey;
+  }
+
+  .nub {
+    font-size: 3.25rem;
+    line-height: 74px;
+    color: $text-green;
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .statistic{
+    .box-title {
+      font-size: calc(1vw + 1.75rem);
+    }
+
+    .nub {
+      font-size: calc(1vw + 1.75rem);
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .statistic .box-down {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,117 @@
+header {
+  box-shadow: $box-shadow;
+  background: #fff;
+
+  .menu-bar {
+    color: $text-grey;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 2s linear;
+  }
+
+  .logo {
+    width: 340px;
+    height: 70px;
+    margin-left: 2rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .nav a {
+    margin-left: 3px;
+    border-radius: 50px;
+    color: $text-grey;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    line-height: 19px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+
+    &:hover {
+      background: $text-green;
+      box-shadow: $box-shadow;
+      color: #fff;
+    }
+  }
+
+  .nav .course-color {
+    background: $text-green;
+    box-shadow: $box-shadow;
+    color: #fff;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  header {
+    .container-header {
+      flex-direction: row;
+
+      .menu-bar {
+        position: absolute;
+        display: inline-block !important;
+      }
+    }
+
+    .logo {
+      display: inline-block;
+      margin: 0 auto;
+      width: 150px;
+      height: 30px;
+      justify-self: start;
+      background-size: 150px 30px;
+      background-repeat: no-repeat;
+    }
+
+    .nav {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-top: 1px solid rgba(0, 0, 0, .1);
+      border-bottom: 1px solid rgba(0, 0, 0, .1);
+      transition: .2s linear;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+      &.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+
+      .course-color {
+        background: #fff;
+        color: $text-grey;
+        box-shadow: none;
+      }
+
+      a {
+        display: block;
+        width: 100%;
+        margin: 20px;
+        text-align: center;
+      }
+
+      .fa-times {
+        transform: rotate(180deg);
+      }
+
+      .full-mb {
+        height: 100vh;
+      }
+    }
+  }
+}

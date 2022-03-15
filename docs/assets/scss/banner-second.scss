@@ -1,0 +1,38 @@
+.banner-second {
+  margin-top: 200px;
+  height: 500px;
+  background-image: url("https://scontent.fhan3-4.fna.fbcdn.net/v/t1.15752-9/274797781_490369615877269_7505832026830939684_n.png?stp=dst-png_s2048x2048&_nc_cat=104&ccb=1-5&_nc_sid=ae9488&_nc_ohc=d00MWBOU77EAX8kMjUf&_nc_ht=scontent.fhan3-4.fna&oh=03_AVJcQ_5SVOgMBKx6hFGJMJ2fxv9e2OOxq-pFYAQHQhLp6Q&oe=62501F5B");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .box {
+    .title {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #fff;
+      padding: 2rem;
+    }
+
+    .banner-second-btn {
+      font-size: 1.5rem;
+      background: #fff;
+      color: $text-green;
+      border-radius: 35px;
+      padding: .5rem 3.5rem;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .banner-second .box{
+    .title {
+      font-size: calc(1vw + 1.5rem);
+    }
+  
+    .banner-second-btn {
+      font-size: calc(1vw + 1rem);
+      padding: 0 2rem;
+    }   
+  }
+}
