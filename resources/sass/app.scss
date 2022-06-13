@@ -6,3 +6,9 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+.example {
+    display: flex;
+    align-items: center;
+    min-height: 54vh;
+}
