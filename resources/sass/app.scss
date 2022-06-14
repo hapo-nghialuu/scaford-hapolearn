@@ -1,14 +1,11 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
-// Variables
-@import 'variables';
-
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-.example {
-    display: flex;
-    align-items: center;
-    min-height: 54vh;
-}
+// Variables
+@import 'variables';
+
+// Variables
+@import 'homepage/header';
