@@ -1,54 +1,13 @@
 .navbar-nav {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .example {
-    display: flex;
-    align-items: center;
-    min-height: 54vh;
+  display: flex;
+  align-items: center;
+  min-height: 54vh;
 }
 
-.main-header {
-    .test-1 {
-        .test-2 {
-            background-color: red;
-        }
-    }
-
-}
-
-.main-header {
-    .test-2 {
-        background-color: blue;
-    }
-}
-
-
-@media (max-width: 1024px) {
-    // TODO
-}
-
-
-@media (max-width: 768px) {
-    .navbar-nav {
-        justify-content: flex-start;
-    }
-
-    .example {
-        min-height: 74vh;
-    }
-}
-
-@media (max-width: 375px) {
-    .navbar-nav {
-        justify-content: center;
-    }
-
-    .example {
-        min-height: 104vh;
-    }
-}
-
-.main-header {
-    background-color: blue;
+@media (max-width: 992px) {
+	// TODO
 }
